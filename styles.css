@@ -5,6 +5,7 @@ body {
   font-style: normal;
 }
 
+/* body media querry */
 @media screen and (min-width: 768px) {
   body {
     max-width: 1440px;
@@ -34,6 +35,8 @@ header {
   width: 75%;
   height: auto;
 }
+
+/* header media querry */
 
 @media screen and (min-width: 768px) {
   header {
@@ -96,6 +99,8 @@ header {
   max-width: 100px;
 }
 
+/* main block one media querry */
+
 @media screen and (min-width: 768px) {
   .main-block-one {
     position: static;
@@ -139,6 +144,7 @@ header {
   padding: 3rem 2rem 1rem 1rem;
 }
 
+/* main block two media querry */
 @media screen and (min-width: 768px) {
   .main-block-two {
     background-size: cover;
@@ -178,6 +184,7 @@ header {
   display: none;
 }
 
+/* logos block media querry */
 @media screen and (min-width: 768px) {
   .logos-section {
     flex-direction: row;
@@ -264,6 +271,7 @@ header {
   margin-left: 0.5rem;
 }
 
+/* block with overflow-x style media querry */
 @media screen and (min-width: 768px) {
   .editions {
     overflow-x: unset;
@@ -309,6 +317,7 @@ header {
   padding-top: 3rem;
 }
 
+/* main block three media querry */
 @media screen and (min-width: 768px) {
   .main-block-three {
     padding: 1rem 1rem 0 1rem;
@@ -386,6 +395,7 @@ footer {
   display: none;
 }
 
+/* footer media querry */
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
