@@ -1,0 +1,422 @@
+html,
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+}
+
+.header-links {
+  display: none;
+}
+
+header {
+  width: auto;
+  display: flex;
+  margin: 1rem 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 75%;
+  height: auto;
+}
+
+.menu-logo {
+  width: 75%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .menu-logo {
+    display: none;
+  }
+  .header-links {
+    display: block;
+  }
+  .header-links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #555555;
+  }
+
+  .header-links a:last-child {
+    color: #ff3998;
+  }
+}
+
+.main-block-one {
+  position: relative;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.image-overlay {
+  position: absolute;
+}
+
+.image-overlay img {
+  object-position: center top;
+  width: 100%;
+  object-position: 130px;
+  object-fit: cover;
+}
+
+.block-text {
+  padding-top: 2rem;
+  width: 65%;
+}
+
+.launch {
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3998;
+}
+
+.button {
+  border: 4px solid #0000;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, rgb(255, 192, 250), red, yellow) border-box;
+  margin: 1rem 0;
+  max-width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-block-one {
+    position: static;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-overlay {
+    position: static;
+  }
+  .image-overlay img {
+    object-position: unset;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .block-text {
+    padding: 1rem;
+    max-width: 50%;
+  }
+
+  .launch {
+    font-size: 1em;
+  }
+
+  .block-text h1 {
+    font-size: 2em;
+  }
+}
+
+.main-block-two {
+  background-image: url("./assets/background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-block-two div {
+  padding: 3rem 2rem 1rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-block-two {
+    background-size: cover;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+
+  .main-block-two h1 {
+    font-size: 1em;
+  }
+
+  .main-block-two p {
+    font-size: smaller;
+  }
+}
+.logos-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem;
+  align-items: center;
+}
+
+.comp-logo {
+  width: 50%;
+}
+
+.comp-logo img {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  position: relative;
+}
+
+.opendoor {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logos-section {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .opendoor {
+    display: block;
+  }
+
+  .comp-logo img {
+    width: 100%;
+    max-width: 100px;
+    max-height: 33px;
+    padding: 0 auto;
+  }
+}
+
+.auction {
+  margin: 1rem;
+}
+
+.auction p,
+.auction p a {
+  color: grey;
+}
+
+.editions {
+  display: flex;
+  overflow-x: scroll;
+  border-bottom: 2px solid #dad9d9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: stretch;
+  min-width: 80%;
+}
+
+.edit-img,
+.info {
+  width: 100%;
+}
+
+.info {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-around;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left p {
+  margin: 1rem;
+  text-align: left;
+}
+
+.right p {
+  margin: 1rem;
+  text-align: right;
+}
+
+.gloop {
+  color: #f3803a;
+  font-size: small;
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+}
+.eth p {
+  margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .editions {
+    overflow-x: unset;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .container {
+    align-items: unset;
+    min-width: unset;
+    width: 25%;
+  }
+  .edit-img,
+  .info {
+    height: auto;
+  }
+  .left {
+    width: 40%;
+  }
+  .left p {
+    margin: 0.5rem;
+    text-align: left;
+    font-size: x-small;
+  }
+
+  .right p {
+    margin: 0.5rem;
+    text-align: right;
+    font-size: x-small;
+  }
+}
+
+.main-block-three {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.img2 img {
+  display: block;
+  object-position: 20px;
+  width: 150px;
+  padding-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-block-three {
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+    border-bottom: 2px solid #dad9d9;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .img2 img {
+    object-fit: unset;
+    object-position: unset;
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+  }
+}
+
+footer {
+  margin: 3rem 1rem 0 1rem;
+}
+
+.footer-logo {
+  width: 70%;
+}
+
+.footer-logo img {
+  width: 70%;
+}
+
+.footer-logo p {
+  color: #555555;
+}
+
+.social-links {
+  display: flex;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.head {
+  width: 50%;
+}
+
+.head h4 {
+  margin: 3rem 1rem 0 0;
+  color: #555555;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content a {
+  margin: 0.5rem 1rem 0 0;
+  text-decoration: none;
+  color: #555555;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+  margin: 3rem auto;
+}
+
+.august {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 30%;
+  }
+
+  .footer-logo img {
+    width: 25%;
+  }
+
+  .august {
+    display: block;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .head {
+    padding-right: 4rem;
+  }
+
+  .social-links a img {
+    width: 30px;
+    height: 30px;
+    padding-right: 1rem;
+  }
+}
